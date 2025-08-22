@@ -1,44 +1,33 @@
 body {
-  background-color: #FFFFFF;
+  font-family: Raleway;
+  font-weight: 400;
+  font-style: normal;
+  background-color: white;
 }
 
 .header {
-  height: 293px;
-  
+
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  font-family: Raleway;
+  padding: 92px 50px 96px ;
   font-size: 18px;
-  font-weight: 400;
-  padding-right: 50px;
-  padding-left: 50px;
-  line-height: normal;
-  font-style: normal;
-
-  
 }
 
 .header__links-list{
   display: flex;
-  gap: 34px;
-  
   align-items: flex-start;
-  
-  
-
-
-
+  gap: 33px; 
 }
 
 .header__links-list-item{
-  list-style: circle;
   text-decoration: underline;
-
+  text-underline-offset: 4px;
+  list-style: circle;
 }
 
 .header__links-list-item_no-bullit{
-  list-style: none;
+  list-style: none; /*убрал кружок*/
 }
 
 .address{
@@ -46,28 +35,176 @@ body {
   display: flex;
   flex-direction: column;
   justify-self: end;
-  max-width: 240px;
   align-items: flex-start;
-  line-height: 24.3px;
+  max-width: 240px; 
   font-style: normal;
+  line-height: 24.3px;
 }
 
 .address__links-list-item{
+  text-underline-offset: 4px;
   list-style: none;
-  
-  
 }
 
 .header__logo-image {
+  display: block;
   width: 148px;
   height: 105px;
 
 }
 
 .cover {
-  height: 757px;
-  
+  position: relative;
+  min-height: 757px;
+  padding: 170px 50px 50px;
   background: url('/images/cover.jpg') no-repeat center/cover ;
-  filter: brightness(60%);
+}
 
+.overlay {
+  position: absolute;  
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.cover__title{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 115%;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+ .aligned-text{
+  display: block;
+ }
+
+ .aligned-text_left {
+  text-align: left;
+ }
+
+ .aligned-text_center {
+  text-align: center;
+ }
+
+ .aligned-text_right {
+  text-align: right;
+ }
+
+ .no-letter-spacing{
+  letter-spacing: 0;
+ }
+
+.cover__description {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  gap: 107px;
+  margin-top: 105px;
+  color: #FFFFFF;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.cover__description-text{
+  word-spacing: 18px;
+  white-space: nowrap;
+}
+
+.bet-button {
+  width: 256px;
+  height: 51px ;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  background-color: transparent;
+  white-space: nowrap;
+}
+
+.lots {
+  margin-top: 180px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-weight: 700;
+}
+
+.lots__heading{
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  margin-bottom: 27px;
+}
+
+.lots__card-list-item{
+  min-height: 596px;
+  width: 334px ;
+}
+
+.lots__card-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style-type: none;
+}
+
+.card-link{
+  width: 100%;
+  text-decoration: none;
+  
+}
+
+.card__text{
+  position: relative;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.card{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  color: #FFFFFF;
+  padding: 48px 40px;
+  
+}
+.card__title{
+  position: relative;
+  font-size: 22px;
+  text-transform: uppercase;
+  line-height: 120%;
+  text-decoration: underline ;
+
+}
+
+.card_type_film{
+  background: url('/images/card-lot-01.jpg') no-repeat center/cover ;
+}
+
+.card_type_book{
+  background: url('/images/card-lot-02.jpg') no-repeat center/cover ;
+
+}
+
+.card_type_picture{
+  background: url('/images/card-lot-03.jpg') no-repeat center/cover ;
+
+}
+
+.lots__look-more-link{
+  font-size: 20px;
+  font-weight: 400;
+  display: block;
+  margin-top: 30px;
+  margin-left: 40px;
 }
