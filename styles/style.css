@@ -22,7 +22,7 @@
   list-style: none; /*убрал кружок*/
 }
 
-.header__link_no-text-decoration{
+.header__link_no-text-decoration {
   text-decoration: none; /*убрал подчеркивание*/
 }
 
@@ -275,7 +275,7 @@ display: block;
   justify-content: center;
 }
 
-.footer__menu-link_active{
+.footer__menu-link_active {
   text-decoration: none;
 }
 
