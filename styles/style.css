@@ -181,15 +181,15 @@
 }
 
 .card_type_film {
-  background: url('./images/card-lot-01.jpg') no-repeat center/cover ; /*исправленно*/
+  background: url('../images/card-lot-01.jpg') no-repeat center/cover ; /*исправленно*/
 }
 
 .card_type_book {
-  background: url('./images/card-lot-02.jpg') no-repeat center/cover ; /*исправленно*/
+  background: url('../images/card-lot-02.jpg') no-repeat center/cover ; /*исправленно*/
 }
 
 .card_type_picture {
-  background: url('./images/card-lot-03.jpg') no-repeat center/cover ; /*исправленно*/
+  background: url('../images/card-lot-03.jpg') no-repeat center/cover ; /*исправленно*/
 }
 
 .lots__look-more-link {
