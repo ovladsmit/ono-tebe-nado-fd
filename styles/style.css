@@ -1,10 +1,4 @@
-body {
-  font-family: Raleway;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.header {
+.header {                         /*исправленно*/
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
@@ -26,6 +20,10 @@ body {
 
 .header__links-list-item_no-bullit {
   list-style: none; /*убрал кружок*/
+}
+
+.header__link_no-text-decoration{
+  text-decoration: none; /*убрал подчеркивание*/
 }
 
 .address {
@@ -53,7 +51,7 @@ body {
   position: relative;
   min-height: 757px;
   padding: 170px 50px 50px;
-  background: url('/images/cover.jpg') no-repeat center/cover ;
+  background: url('../images/cover.jpg') no-repeat center/cover ; /*исправленно*/
 }
 
 .overlay {
@@ -183,15 +181,15 @@ body {
 }
 
 .card_type_film {
-  background: url('/images/card-lot-01.jpg') no-repeat center/cover ;
+  background: url('./images/card-lot-01.jpg') no-repeat center/cover ; /*исправленно*/
 }
 
 .card_type_book {
-  background: url('/images/card-lot-02.jpg') no-repeat center/cover ;
+  background: url('./images/card-lot-02.jpg') no-repeat center/cover ; /*исправленно*/
 }
 
 .card_type_picture {
-  background: url('/images/card-lot-03.jpg') no-repeat center/cover ;
+  background: url('./images/card-lot-03.jpg') no-repeat center/cover ; /*исправленно*/
 }
 
 .lots__look-more-link {
@@ -275,6 +273,10 @@ display: block;
 .footer__menu {
   display: flex;
   justify-content: center;
+}
+
+.footer__menu-link_active{
+  text-decoration: none;
 }
 
 .footer__menu-list-item {
