@@ -15,7 +15,7 @@ body {
 .header__links-list {
   display: flex;
   align-items: flex-start;
-  gap: 33px; 
+  gap: 33px;
 }
 
 .header__links-list-item {
@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   justify-self: end;
   align-items: flex-start;
-  max-width: 240px; 
+  max-width: 240px;
   font-style: normal;
   line-height: 24.3px;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .overlay {
-  position: absolute;  
+  position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -240,7 +240,7 @@ body {
 .description__block {
   display: flex;
   flex-direction: column;
-  row-gap: 25px; ;
+  row-gap: 25px;
   font-size: 20px;
   line-height: 24px;
 }
